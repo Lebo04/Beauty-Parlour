@@ -75,6 +75,10 @@ section .title::after {
   padding-bottom: 40px;
 }
 
+.contact {
+  margin-right: 200px;
+}
+
 .massage,
 .facial,
 .manicure,
@@ -84,7 +88,6 @@ section .title::after {
 .book,
 .contact {
   margin-left: 200px;
-  margin-right: 200px;
 }
 
 footer {
@@ -123,4 +126,122 @@ footer p {
 
 .list-group {
   padding-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  body {
+    width: 903px;
+  }
+  .home img {
+    width: 903px;
+    height: 100vh;
+  }
+  .navbar {
+    width: 903px;
+  }
+  .about .title,
+  .services .title {
+    font-weight: 600;
+    margin-left: 50px;
+  }
+  .about h2,
+  p {
+    margin-left: opx;
+    margin-right: opx;
+  }
+  .massage,
+  .facial,
+  .manicure,
+  .pedicure,
+  .waxing,
+  .lash,
+  .book {
+    margin-right: 50px;
+  }
+  .book .form-control,
+  .book .form-select {
+    width: 10px;
+  }
+  .contact .border .form-control {
+    width: 100px;
+  }
+  th,
+  td {
+    padding-left: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 900px;
+  }
+  .home img {
+    width: 903px;
+    height: 100vh;
+  }
+  .navbar {
+    width: 903px;
+  }
+  .about .title,
+  .services .title {
+    font-weight: 600;
+    margin-left: 50px;
+  }
+  .about h2,
+  p {
+    margin-left: opx;
+    margin-right: opx;
+  }
+  section .title {
+    text-align: center;
+  }
+  .massage,
+  .facial,
+  .manicure,
+  .pedicure,
+  .waxing,
+  .lash {
+    margin-right: 50px;
+  }
+  .book .form-control,
+  .book .form-select {
+    width: 500px;
+  }
+  .contact .border .form-control {
+    width: 40px;
+  }
+  th,
+  td {
+    padding-left: 80px;
+  }
+}
+
+@media (max-width: 992px) {
+  .book .form-control,
+  .book .form-select {
+    width: 500px;
+  }
+  .contact .border .form-control {
+    width: 400px;
+  }
+  th,
+  td {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .massage,
+  .facial,
+  .manicure,
+  .pedicure,
+  .waxing,
+  .lash {
+    margin-right: 0px;
+  }
+
+  th,
+  td {
+    padding-left: 150px;
+  }
 }
